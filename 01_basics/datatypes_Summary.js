@@ -10,5 +10,24 @@ const id=Symbol('123');
 const id2=Symbol('123');
 console.log(id===id2); // false
 
-const bigNumber=BigInt(1234567890123456789012345678901234567890);
-const bigNumber2=12345678901234567890123456789012345n;
+const bigNumber=BigInt(1234567890123456789012345678);
+const bigNumber2=12345678901234567890123n;
+
+//array
+const heros=['thor','ironman','spiderman'];
+const numbers=[1,2,3,4,5];
+
+//object
+let myObj={
+    name:"Satyarth",
+    age:20,
+}
+//function
+const myFunction=function(){
+    console.log("hello world");
+}
+
+console.log(typeof id);
+console.log(typeof heros);
+console.log(typeof myObj);
+console.log(typeof myFunction);
