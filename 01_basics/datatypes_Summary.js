@@ -31,3 +31,28 @@ console.log(typeof id);
 console.log(typeof heros);
 console.log(typeof myObj);
 console.log(typeof myFunction);
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                      //MEMORY
+// 1-> primitive (call by value , jo bhi aap change kerte ho is type ke data me vo copy me change hota hai na original value me)
+
+let myYoutubeName="CodeWithSatyarth";
+let myYoutubeName2=myYoutubeName;
+myYoutubeName="CodeWithSatyarth2";
+console.log(myYoutubeName); //CodeWithSatyarth2
+console.log(myYoutubeName2); //CodeWithSatyarth
+
+
+// jab aap primitive type ke data ko change karte ho to vo copy me change hota hai na ki original value me
+// 2->non primitive (call by reference, jo bhi aap change kerte ho is type ke data me vo original value me change hota hai na ki copy me)
+
+let userOne={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+let userTwo=userOne
+
+userTwo.email="satyarth@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
